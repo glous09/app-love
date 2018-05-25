@@ -13,6 +13,7 @@
 
 body {
   margin: 0 auto;
+  padding: 0;
   font-size: 16px;
   line-height: 1.71429;
 }
@@ -72,98 +73,124 @@ a:hover {
 body {
   width: 100%;
   margin:0;
+  padding: 0;
 }
-nav{
+
+#header {
 background-color: white;
 width: 100%;
-top:0;
 position: fixed;
 }
-ul{
+
+#header ul{
   list-style: none;
 }
-li{
+
+ #header > ul > li{
   display: inline-block;
-  margin: 15px;
+  margin: 20px;
 }
-a {
-  text-decoration: none;
-  color:black;
-  display: block;
-  font-size: 25px;
-  text-align: left;
+
+ #header >ul > li >a {
+  font-size: 30px;
 }
-.logo {
- /*position: relative;
- margin-left: 750px;*/
+
+#header > ul > .logo {
  float: right;
+ margin-right: 150px;
 }
-#home > div > h2 {
-  position: relative;
-  text-align: center;
+
+#home {
   color: white;
-  bottom: 450px;
-}
-#home > img {
+  text-align: center;
   width: 100%;
+}
+
+#home > img {
   height: 700px;
+  width: 100%;
 }
-#home > div > h1 {
-  position: relative;
-  text-align: center;
-  font-size: 35PX;
-  color: white;
-  bottom: 450px;
+
+#home > .text-home {
+  top:400px;
+  margin-top: -400px;
 }
-#home > div > p {
-  position: relative;
-  text-align: center;
-  font-size: 15PX;
+
+#home > .text-home > .button {
+  background-color: green;
   color: white;
-  bottom: 490px;
-}
-#home > div > a {
-  position: relative;
-  block:inline;
-  text-align: center;
-  font-size: 15PX;
-  color: white;
-  bottom: 380px;
+  font-size: 25px;
+  margin-top: 40px;
   padding: 10px;
-  background-color:#6df26d;
-  width: 150px;
-  margin:auto;
 }
-#services{
+
+#services {
   background-color: red;
-  height: 700px;
-}
-#services > div > img {
-  position: relative;
-  width: 20%;
-  margin:97px;
-  top:100px;
-}
-#services > div > h2 {
-  text-align: center;
-  position: relative;
-  bottom: 495px;
   color: white;
-  font-size: 30px;
-}
-#services > div > h3 {
+  height: 780px;
+  width: 100%;
   text-align: center;
-  position: relative;
-  bottom: 495px;
-  color: white;
-  font-size: 30px;
 }
-#services > div > h4 {
+
+#services > .text-1 {
+  font-size: 20px;
+  height:200px;
+  padding-top:170px;
   text-align: center;
-  position: relative;
-  color: white;
-  bottom: 490px;
+  width: 100%;
 }
-.design-text {
-  float: left;
+
+#services > .img-service {
+  display: inline-block;
+  padding-top:150px;
+  height: 550px;
+  text-align: center;
+  width: 100%;
+}
+
+#services > .img-service > article {
+  display: inline-block;
+  padding: 10px 10px 10px;
+  width: 30%;
+}
+
+#services > .img-service > article > img {
+  display: inline-block;
+  width: 60%;
+}
+
+#work {
+  height: 800px;
+  text-align: center;
+  width: 100%;
+}
+#work > .text-2 > img {
+  width: 40%;
+}
+
+#products {
+  text-align: center;
+  height: 1000px;
+  width: 100%;
+}
+
+#products > article {
+  display: inline-block;
+  margin-top: 20px;
+  width: 33%;
+}
+
+#products > article > img {
+  width: 46%;
+}
+
+#footer {
+  background-color: #26253d;
+  color: white;
+  font-size:20px;
+  text-align: center;
+}
+
+.clear {
+ clear: both;
 }
